@@ -2,11 +2,11 @@ name: Node CI
 
 on:
   push:
-    branches: master
+    branches: main
     paths-ignore:
       - "docs/**"
   pull_request:
-    branches: master
+    branches: main
     paths-ignore:
       - "docs/**"
 
@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Lint 🧐
-        run: npm run lint:check
+        run: npm run lint
 
       - name: Test 🚨
         run: npm test
