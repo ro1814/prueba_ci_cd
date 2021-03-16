@@ -5,7 +5,7 @@
     "lint": "npm run lint:check && npm run lint:fix",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "echo 'TODO: Add a test runner and then update this command'",
+    "test": "jest",
     "serve": "echo 'TODO: Add your serve command here",
     "start": "npm run serve",
     "build": "mkdir -p build && cp src/*.js build # TODO: Replace with your build command",
